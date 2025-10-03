@@ -29,9 +29,23 @@ venv/
 Server runs at http://localhost:4000.
 
 2. **Run JMeter Test Plan**
+How to run JMeter and generate both .jtl and HTML report:
+# Run JMeter in non-GUI mode, save results
 jmeter -n -t jmeter/test-plan.jmx -l jmeter/reports/results.jtl
 
-3. **Analyze Results with AI**
+# Generate HTML dashboard report
+jmeter -g jmeter/reports/results.jtl -o jmeter/reports/html-report
+-n → non-GUI
+-t → test plan file
+-l → JTL results file
+-g → generate report from existing JTL
+-o → output folder for HTML report
+After this, you can open the dashboard:
+jmeter/reports/html-report/index.html
+
+This HTML shows charts, response times, failures, etc.
+
+4. **Analyze Results with AI**
 cd ai
 source venv/bin/activate   # if not already active
 pip install -r requirements.txt
