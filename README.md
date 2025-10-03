@@ -31,7 +31,7 @@ Server runs at http://localhost:4000.
 2. **Run JMeter Test Plan**
 How to run JMeter and generate both .jtl and HTML report:
 # Run JMeter in non-GUI mode, save results
-jmeter -n -t jmeter/test-plan.jmx -l jmeter/reports/results.jtl
+jmeter -n -t jmeter/simple_poc.jmx -l jmeter/reports/results.jtl
 
 # Generate HTML dashboard report
 jmeter -g jmeter/reports/results.jtl -o jmeter/reports/html-report
