@@ -1,0 +1,8 @@
+
+JMeter AI Summary Report
+========================
+Total Samples: 150
+Average Response Time: 0.63 ms
+Error Rate: 58.00 %
+
+Performance Status: Needs Attention ⚠️
